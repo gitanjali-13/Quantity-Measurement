@@ -9,8 +9,6 @@ import UIKit
 
 class UnitViewController: UIViewController {
     
-    @IBOutlet weak var label: UILabel!
-
     @IBOutlet weak var inputTextField: UITextField!
     
     @IBOutlet weak var fromSegment: UISegmentedControl!
@@ -20,6 +18,7 @@ class UnitViewController: UIViewController {
     @IBOutlet weak var convertButton: UIButton!
     
     @IBOutlet weak var outputTextField: UITextField!
+    
     
     override func viewDidLoad() {
         
@@ -31,9 +30,9 @@ class UnitViewController: UIViewController {
         
         
         if inputTextField.text == "" {
-            label.text = "Enter here input"
             
         } else {
+            
             if let inputValue = Double(inputTextField.text!) {
                 print("\(inputValue)")
                 

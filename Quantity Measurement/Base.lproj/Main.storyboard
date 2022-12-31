@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFL-2i-dYm">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -9,35 +9,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Unit View Controller-->
+        <!--UnitViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="UnitViewController" customModule="Quantity_Measurement" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UnitViewController" title="UnitViewController" id="BYZ-38-t0r" customClass="UnitViewController" customModule="Quantity_Measurement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="bt6-mc-7QD">
-                                <rect key="frame" x="19" y="280" width="355" height="292"/>
+                                <rect key="frame" x="19" y="276" width="355" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ruR-7B-Ybr" userLabel="TopStack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="106"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="110"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LP-Ya-iMh">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
-                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter here input" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MX8-n2-49k">
-                                                <rect key="frame" x="0.0" y="38" width="355" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="51"/>
                                                 <color key="backgroundColor" red="0.72561290590000005" green="0.86078917980000003" blue="0.85455468229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="3" translatesAutoresizingMaskIntoConstraints="NO" id="dMv-ZE-cjY">
-                                                <rect key="frame" x="0.0" y="76" width="355" height="31"/>
+                                                <rect key="frame" x="0.0" y="59" width="355" height="52"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                                 <segments>
                                                     <segment title="Meter"/>
@@ -49,8 +42,8 @@
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="IZZ-zr-we9" userLabel="BottomStack View">
-                                        <rect key="frame" x="0.0" y="186" width="355" height="106"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IZZ-zr-we9" userLabel="BottomStack View">
+                                        <rect key="frame" x="0.0" y="190" width="355" height="110"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zIs-xw-vdh">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="31"/>
@@ -64,7 +57,7 @@
                                                 <color key="selectedSegmentTintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </segmentedControl>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohg-E4-9oU">
-                                                <rect key="frame" x="0.0" y="38" width="355" height="30"/>
+                                                <rect key="frame" x="0.0" y="40" width="355" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Convert">
@@ -76,7 +69,7 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="output" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zk5-Uc-tho">
-                                                <rect key="frame" x="0.0" y="76" width="355" height="30"/>
+                                                <rect key="frame" x="0.0" y="80" width="355" height="30"/>
                                                 <color key="backgroundColor" red="0.72561290590000005" green="0.86078917980000003" blue="0.85455468229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="EhZ-QC-NPd"/>
@@ -96,17 +89,118 @@
                             <constraint firstItem="bt6-mc-7QD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nNs-39-nvg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="lFv-0X-WcH"/>
                     <connections>
                         <outlet property="fromSegment" destination="dMv-ZE-cjY" id="yEX-VE-Dkv"/>
                         <outlet property="inputTextField" destination="MX8-n2-49k" id="YJE-H4-OAH"/>
-                        <outlet property="label" destination="0LP-Ya-iMh" id="1Se-Pb-3fw"/>
                         <outlet property="outputTextField" destination="zk5-Uc-tho" id="ABp-Gi-1ce"/>
                         <outlet property="toSegment" destination="zIs-xw-vdh" id="3ZW-dU-0z8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64.885496183206101" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="3162.5954198473282" y="3.5211267605633805"/>
+        </scene>
+        <!--Temperature View Controller-->
+        <scene sceneID="eOR-TF-eyV">
+            <objects>
+                <viewController storyboardIdentifier="TemperatureViewController" id="7uD-iQ-cVc" customClass="TemperatureViewController" customModule="Quantity_Measurement" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dgs-D4-gqw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="bYz-ji-WV7">
+                                <rect key="frame" x="19" y="283" width="355" height="286.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="w7d-Pb-vrh">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="87"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6K-KH-Q8I">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="34"/>
+                                                <color key="backgroundColor" red="0.72561290590000005" green="0.86078917980000003" blue="0.85455468229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="f5G-Zo-86a">
+                                                <rect key="frame" x="0.0" y="53" width="355" height="35"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <segments>
+                                                    <segment title="Celsius"/>
+                                                    <segment title="Fahrenheit"/>
+                                                </segments>
+                                                <color key="selectedSegmentTintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kRL-3j-9my">
+                                        <rect key="frame" x="0.0" y="167" width="355" height="119.33333333333331"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="xVB-lu-MPD">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="32"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <segments>
+                                                    <segment title="celsius"/>
+                                                    <segment title="Fahrenheit"/>
+                                                </segments>
+                                                <color key="selectedSegmentTintColor" red="0.0" green="0.45882352939999999" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Peg-we-VqV">
+                                                <rect key="frame" x="0.0" y="41" width="355" height="34.333333333333343"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Convert"/>
+                                                <connections>
+                                                    <action selector="convertButton:" destination="7uD-iQ-cVc" eventType="touchUpInside" id="aJQ-wM-AbM"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="output" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="boc-R8-SDq">
+                                                <rect key="frame" x="0.0" y="85.333333333333371" width="355" height="34"/>
+                                                <color key="backgroundColor" red="0.72561290590000005" green="0.86078917980000003" blue="0.85455468229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qQa-Gm-imG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bYz-ji-WV7" firstAttribute="centerY" secondItem="Dgs-D4-gqw" secondAttribute="centerY" id="ABD-oq-SxS"/>
+                            <constraint firstItem="bYz-ji-WV7" firstAttribute="centerX" secondItem="Dgs-D4-gqw" secondAttribute="centerX" id="SZo-Kt-veR"/>
+                            <constraint firstItem="bYz-ji-WV7" firstAttribute="leading" secondItem="qQa-Gm-imG" secondAttribute="leading" constant="19" id="Xoa-td-Cgi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fromSegment" destination="f5G-Zo-86a" id="B3Z-qK-DyB"/>
+                        <outlet property="tempOutput" destination="boc-R8-SDq" id="eQ3-PY-lVO"/>
+                        <outlet property="tempinput" destination="h6K-KH-Q8I" id="r24-Nu-LR9"/>
+                        <outlet property="toSegment" destination="xVB-lu-MPD" id="2tU-0B-vBU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAS-0o-7LN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3849.6183206106871" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="N7Y-3j-Adf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xFL-2i-dYm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MWB-dK-ciZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="px0-iD-4Jh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLb-wo-Hsi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2450" y="4"/>
         </scene>
     </scenes>
     <resources>
@@ -118,9 +212,6 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
